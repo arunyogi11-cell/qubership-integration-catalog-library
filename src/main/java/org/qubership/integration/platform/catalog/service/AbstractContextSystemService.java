@@ -49,7 +49,7 @@ public abstract class AbstractContextSystemService {
 
 
 
-    protected ContextSystem enrichAndSaveDatabaseSystem(ContextSystem createdSystem, boolean isImport) {
+    protected ContextSystem enrichAndSaveContextSystem(ContextSystem createdSystem, boolean isImport) {
         createdSystem = contextSystemRepository.save(createdSystem);
         if (log.isDebugEnabled()) {
             log.debug("Created database system: {}", createdSystem);
