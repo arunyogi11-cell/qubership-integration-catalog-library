@@ -45,10 +45,6 @@ properties:
       default: false
     - name: context
       title: Context
-      allowedValues:
-        - SCS
-        - REDIS_CONTEXT
-      default: REDIS_CONTEXT
     - name: sessionId
       title: Session context ID
       description: Session identifier

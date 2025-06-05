@@ -23,5 +23,4 @@ public enum IntegrationSystemType {
     INTERNAL,
     EXTERNAL,
     IMPLEMENTED,
-    ConTEXT,
 }
