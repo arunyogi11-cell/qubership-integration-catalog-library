@@ -14,25 +14,8 @@ customTabs:
       conditions:
         - property: useCorrelationId
           equalTo: false
-          mandatoryProperties: [ 'sessionId' ]
+          mandatoryProperties: [ 'contextId' ]
 properties:
-  advanced:
-    - name: connectTimeout
-      title: Connection timeout (ms)
-      description: Specifies connection timeout in millis (default value will be used if nothing is given)
-      type: number
-      mandatory: false
-      default: 120000
-    - name: propagateContext
-      title: Propagate context
-      description: Propagate context to headers before sending message
-      type: boolean
-      default: true
-      query: false
-    - name: overrideContextComponent
-      title: Override Context Component
-      type: custom
-      uiComponent: context-override
   hidden:
     - name: overrideContextParams
       title: Override context parameters
@@ -43,10 +26,11 @@ properties:
       title: Use correlation ID as session context ID
       type: boolean
       default: false
-    - name: context
+    - name: contextServiceId
       title: Context
-    - name: sessionId
-      title: Session context ID
+      type: string
+    - name: contextId
+      title: context ID
       description: Session identifier
       type: string
     - name: operation

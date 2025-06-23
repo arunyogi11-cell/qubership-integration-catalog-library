@@ -122,7 +122,7 @@ public class ContextBaseService {
                                         "jsonb_extract_path_text",
                                         String.class,
                                         root.<String>get("properties"),
-                                        builder.literal(CamelOptions.CONTEXT)
+                                        builder.literal(CamelOptions.CONTEXT_SERVICE_ID)
                                 ),
                         contextId)
         ));
