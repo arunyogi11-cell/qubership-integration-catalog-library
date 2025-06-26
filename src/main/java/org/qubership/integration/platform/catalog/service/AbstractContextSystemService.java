@@ -42,7 +42,6 @@ public abstract class AbstractContextSystemService {
             ActionsLogService actionLogger
     ) {
         this.contextSystemRepository = contextSystemRepository;
-        //this.contextSystemMapper = contextSystemMapper;
         this.actionLogger = actionLogger;
     }
 
